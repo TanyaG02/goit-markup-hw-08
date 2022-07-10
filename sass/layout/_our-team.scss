@@ -1,0 +1,114 @@
+/* OUR TEAM */
+
+.our-team {
+  background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.our-team__title {
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 30px;
+  @include tablet {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.our-team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.our-team__item {
+  width: 100%;
+  background-color: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+}
+// ! //
+
+.team-inner {
+  padding: var(--typical-margin);
+}
+
+.team-inner__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-inner__text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-gray-text);
+  margin-bottom: 16px;
+}
+
+.team-inner__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-inner__item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.team-inner__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.team-inner__icon {
+  fill: var(--icon-color-gray);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .team-inner__link:hover &,
+  .team-inner__link:focus & {
+    fill: var(--white-text-color);
+  }
+}
