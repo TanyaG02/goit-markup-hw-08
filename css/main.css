@@ -1061,31 +1061,78 @@ body {
 }
 
 /* FOOTER */
+.footer .conteiner {
+  display: flex;
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-contacts {
-  display: block;
-  margin-right: 70px;
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
-.footer-section {
-  align-items: baseline;
+.footer-contacts {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo {
+  display: block;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  display: inline-block;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .colortext-footer {
@@ -1104,12 +1151,17 @@ body {
   color: var(--accent-color);
 }
 
-.footer-nav__link-name {
-  padding: 5px 0px;
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer-nav__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-nav__link-name {
+  padding: 5px 0px;
 }
 
 .footer-nav__link {
@@ -1118,7 +1170,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding: 10px;
+  padding: 5px 0px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-nav__link:hover, .footer-nav__link:focus {
@@ -1126,12 +1178,21 @@ body {
 }
 
 /* FOOTER-SOC */
-.footer .conteiner {
-  display: flex;
-}
-
 .content {
-  margin-right: 93px;
+  display: block;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    margin-bottom: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .soc__title {
@@ -1142,6 +1203,12 @@ body {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .soc__title {
+    text-align: left;
+  }
 }
 
 .soc__list {
@@ -1177,8 +1244,14 @@ body {
 }
 
 /* FOLLOW */
-.follow {
+.follow__content {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .follow__content {
+    top: 12px;
+    left: 93px;
+  }
 }
 
 .follow__title {
@@ -1189,28 +1262,37 @@ body {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .follow__title {
+    text-align: left;
+  }
 }
 
 .follow__form {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .follow__form {
+    display: flex;
+  }
 }
 
 .follow__input {
-  width: 358px;
+  min-width: 320px;
   height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
-  margin-right: 12px;
   color: var(--white-text-color);
 }
 .follow__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
