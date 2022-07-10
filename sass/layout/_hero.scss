@@ -3,12 +3,6 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../img/hero/hero-mob.jpeg");
   max-width: 100%;
   height: auto;
 
@@ -20,6 +14,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+ background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero/hero-mob.jpeg");
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
