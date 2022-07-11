@@ -1,14 +1,40 @@
 /* PORTFOLIO NAVIGATION */
 
 .portfolio-nav {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 60px;
+  padding-bottom: 60px; 
+  @include tablet {
+    padding-top: 60px;
+  padding-bottom: 60px; 
+  }
+  @include desktop {
+  padding-top: 60px;
+  padding-bottom: 60px; 
+  }
+  
 }
 
 .portfolio-nav-list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+  row-gap: 15px; 
+
+
+
+  @include tablet {
+    margin-bottom: 30px;
+  display: flex;
+  justify-content: center; 
+  }
+  @include desktop {
+    margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  }
+  
 }
 
 .portfolio-nav-btn:not(:last-child) {

@@ -60,6 +60,66 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open__btn">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-header-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- MOB-MENU -->
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__conteiner">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close__btn">
+              <svg class="menu-close__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-header-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__botton">
+            <ul class="mob-connect list">
+              <li class="mob-connect__item">
+                <a href="tel:+380961111111" class="mob-connect__tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-connect__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-connect__mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc__list list">
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Instagram</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Twitter</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">Facebook</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- PORTFOLIO NAVIGATION -->
@@ -97,12 +157,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/tekhnokryak1-portf.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/tekhnokryak1-desk.jpg     1x,
+                        ./img/portfolio/tekhnokryak1-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/tekhnokryak1-tab.jpeg    1x,
+                        ./img/portfolio/tekhnokryak1-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/tekhnokryak1-mob.jpeg    1x,
+                        ./img/portfolio/tekhnokryak1-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/tekhnokryak1-mob.jpeg"
+                      alt="Технокряк"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -118,12 +201,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/poster2-portf.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/poster2-desk.jpg     1x,
+                        ./img/portfolio/poster2-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/poster2-tab.jpeg    1x,
+                        ./img/portfolio/poster2-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/poster2-mob.jpeg    1x,
+                        ./img/portfolio/poster2-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/poster2-mob.jpeg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -141,12 +247,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/restoran3-portf.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/restoran3-desk.jpg     1x,
+                        ./img/portfolio/restoran3-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/restoran3-tab.jpeg    1x,
+                        ./img/portfolio/restoran3-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/restoran3-mob.jpeg    1x,
+                        ./img/portfolio/restoran3-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/restoran3-mob.jpeg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -162,12 +291,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/praym4-portf.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/praym4-desk.jpg     1x,
+                        ./img/portfolio/praym4-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/praym4-tab.jpeg    1x,
+                        ./img/portfolio/praym4-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/praym4-mob.jpeg    1x,
+                        ./img/portfolio/praym4-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/praym4-mob.jpeg"
+                      alt="Проект Prime"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -183,12 +335,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/korobki5-portf.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/korobki5-desk.jpg     1x,
+                        ./img/portfolio/korobki5-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/korobki5-tab.jpeg    1x,
+                        ./img/portfolio/korobki5-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/korobki5-mob.jpeg    1x,
+                        ./img/portfolio/korobki5-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/korobki5-mob.jpeg"
+                      alt="Проект Boxes"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -204,12 +379,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/borders6-portf.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/borders6-desk.jpg     1x,
+                        ./img/portfolio/borders6-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/borders6-tab.jpeg    1x,
+                        ./img/portfolio/borders6-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/borders6-mob.jpeg    1x,
+                        ./img/portfolio/borders6-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/borders6-mob.jpeg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -225,12 +423,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/izdaniye7-portf.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/izdaniye7-desk.jpg     1x,
+                        ./img/portfolio/izdaniye7-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/izdaniye7-tab.jpeg    1x,
+                        ./img/portfolio/izdaniye7-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/izdaniye7-mob.jpeg    1x,
+                        ./img/portfolio/izdaniye7-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/izdaniye7-mob.jpeg"
+                      alt="Издание Limited Edition"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -246,12 +467,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/lab8-portf.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/lab8-desk.jpg     1x,
+                        ./img/portfolio/lab8-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/lab8-tab.jpeg    1x,
+                        ./img/portfolio/lab8-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/lab8-mob.jpeg    1x,
+                        ./img/portfolio/lab8-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/lab8-mob.jpeg"
+                      alt="Проект LAB"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -267,12 +511,35 @@
             <li class="portfolio-item list">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./img/business9-portf.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/business9-desk.jpg     1x,
+                        ./img/portfolio/business9-desk-2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/business9-tab.jpeg    1x,
+                        ./img/portfolio/business9-tab-2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/business9-mob.jpeg    1x,
+                        ./img/portfolio/business9-mob-2x.jpeg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./img/portfolio/business9-mob.jpeg"
+                      alt="Growing Business"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -366,5 +633,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
